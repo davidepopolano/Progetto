@@ -13,4 +13,5 @@
     <string name="login">Login</string>
     <string name="email">Insert your E-Mail</string>
     <string name="pass">Insert your Password</string>
+    <string name="login_succ">Logged in succesful</string>
 </resources>
