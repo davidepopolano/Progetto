@@ -13,5 +13,17 @@
     <string name="login">Login</string>
     <string name="email">Insert your E-Mail</string>
     <string name="pass">Insert your Password</string>
-    <string name="login_succ">Logged in succesful</string>
+    <string name="login_succ">Logged in successful</string>
+
+    <string name="nome">Davide Popolano</string>
+    <string name="num_tel">+39 3201562885</string>
+    <string name="corso">LTM</string>
+    <string name="indirizzo">Via Sandro Sandri 71</string>
+    <string name="vai">Go</string>
+    <string name="chiama">Call</string>
+
+
+
+
+
 </resources>
