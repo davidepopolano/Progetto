@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Progetto</string>
+    <string name="mondo">Ciao Mondo</string>
+    <string name="cal">Calendar</string>
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus porta
+        nisl vel sollicitudin sagittis. Pellentesque eros turpis, interdum sed metus vitae, posuere
+        auctor lectus. Suspendisse porta cursus neque, ac scelerisque leo feugiat cursus. Ut vitae
+        semper libero. Aliquam pharetra eu ligula vitae ultrices. Curabitur lectus lacus, lobortis
+        vel pellentesque nec.</string>
+    <string name="leggi">Leggi</string>
+    <string name="sot">Sottotitolo e Data</string>
+    <string name="tit">Titolo</string>
+    <string name="login">Login</string>
+    <string name="email">Insert your E-Mail</string>
+    <string name="pass">Insert your Password</string>
+</resources>
