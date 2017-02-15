@@ -2,7 +2,6 @@ package com.elis.ltm.progetto;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.nfc.Tag;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -17,11 +16,13 @@ public class LoginActivity extends Activity implements View.OnClickListener {
     Button loginBtn;
     String usernameprova;
     String passwordprova;
+    public static final String EMAIL_KEY = "email";
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         //link activity to layout
         setContentView(R.layout.activity_login);
         // assing xml to item
@@ -29,8 +30,8 @@ public class LoginActivity extends Activity implements View.OnClickListener {
         passwordET = (EditText) findViewById(R.id.login_et_passw);
         loginBtn = (Button) findViewById(R.id.login_btn);
         loginBtn.setOnClickListener(this);
-        usernameprova ="davide@popolano.it";
-        passwordprova ="provapassword";
+        usernameprova ="user";
+        passwordprova ="user";
     }
     @Override
     public void onClick(View v) {
@@ -40,6 +41,8 @@ public class LoginActivity extends Activity implements View.OnClickListener {
             if (onLogin(name, password)) {
                 Toast.makeText(LoginActivity.this, getString(R.string.login_succ), Toast.LENGTH_LONG).show();
                 Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                intent.putExtra(EMAIL_KEY,name);
+                intent.putExtra("eta", 18);
                 startActivity(intent);
                 finish();
             }
@@ -48,12 +51,7 @@ public class LoginActivity extends Activity implements View.OnClickListener {
     }
 
     public boolean onLogin(String username, String password) {
-        if(!username.equals(usernameprova)||!password.equals(passwordprova)) {
-            Toast.makeText(LoginActivity.this, getString(R.string.storto), Toast.LENGTH_SHORT).show();
-            return false;
-        }else{
             return true;
-        }
     }
 
 
